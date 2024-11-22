@@ -1,0 +1,137 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1; /* светлый серый фон */
+    color: #333333; /* Темно-серый текст для лучшей читаемости */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2e3a59; /* Темный ультрамариновый */
+    color: #f3c400; /* Мягкий золотой */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f3c400;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Анимация появления элементов */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Стиль для секций */
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    max-width: 1100px;
+}
+
+section h2 {
+    color: #2e3a59;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #555;
+}
+
+/* Стиль для двух колонок */
+.two-column {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.two-column ul {
+    width: 48%;
+}
+
+.two-column li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Стили для блоков с лидерами */
+.leader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.leader img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.leader h3 {
+    font-size: 22px;
+    margin: 0;
+}
+
+footer {
+    background-color: #2e3a59; /* Темный ультрамариновый */
+    color: #f3c400; /* Мягкий золотой */
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #f3c400;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f39c12;
+}
